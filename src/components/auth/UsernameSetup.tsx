@@ -127,7 +127,7 @@ export default function UsernameSetup() {
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold mb-2">Choose Your Username</h1>
             <p className="text-gray-400">
-              Select a unique username for your NeoCompiler profile
+              Select a unique username for your NeoRun profile
             </p>
           </div>
           
@@ -223,7 +223,7 @@ export default function UsernameSetup() {
               Why choose a username?
             </p>
             <ul className="text-xs text-gray-500 space-y-1">
-              <li>• Create a recognizable identity in the NeoCompiler community</li>
+              <li>• Create a recognizable identity in the NeoRun community</li>
               <li>• Let others easily find and follow your shared code snippets</li>
               <li>• Get credit when people use your public snippets</li>
             </ul>

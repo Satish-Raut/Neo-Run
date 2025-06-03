@@ -100,7 +100,7 @@ export default function Register({ onToggleForm }: RegisterProps) {
       <div className="text-center">
         <h1 className="text-2xl font-bold text-white">Create an Account</h1>
         <p className="mt-2 text-gray-400">
-          Join NeoCompiler to save and share code snippets
+          Join NeoRun to save and share code snippets
         </p>
       </div>
 

@@ -121,7 +121,7 @@ export default function Login({ onToggleForm }: LoginProps) {
   return (
     <div className="w-full max-w-md p-8 space-y-6 bg-gray-900 rounded-xl shadow-xl border border-purple-900/40">
       <div className="text-center">
-        <h1 className="text-2xl font-bold text-white">Login to NeoCompiler</h1>
+        <h1 className="text-2xl font-bold text-white">Login to NeoRun</h1>
         <p className="mt-2 text-gray-400">
           Access your saved code snippets and more
         </p>

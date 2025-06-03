@@ -2,12 +2,12 @@ import type * as monaco from 'monaco-editor'; // optional, for stronger typings
 import { Language, EditorTheme } from '../types';
 
 export const DEFAULT_CODE: Record<string, string> = {
-    typescript: `console.log("Welcome to NeoCompiler");`,
-    javascript: `console.log("Welcome to NeoCompiler");`,
-    python: `print("Welcome to NeoCompiler")`,
+    typescript: `console.log("Welcome to NeoRun");`,
+    javascript: `console.log("Welcome to NeoRun");`,
+    python: `print("Welcome to NeoRun")`,
     java: `public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to NeoCompiler");
+        System.out.println("Welcome to NeoRun");
     }
 }`,
     go: `package main
@@ -15,23 +15,23 @@ export const DEFAULT_CODE: Record<string, string> = {
 import "fmt"
 
 func main() {
-    fmt.Println("Welcome to NeoCompiler")
+    fmt.Println("Welcome to NeoRun")
 }`,
     rust: `fn main() {
-    println!("Welcome to NeoCompiler");
+    println!("Welcome to NeoRun");
 }`,
-    ruby: `puts "Welcome to NeoCompiler"`,
+    ruby: `puts "Welcome to NeoRun"`,
     cpp: `#include <iostream>
 using namespace std;
 
 int main() {
-    cout << "Welcome to NeoCompiler";
+    cout << "Welcome to NeoRun";
     return 0;
 }`,
     c: `#include <stdio.h>
 
 int main() {
-    printf("Welcome to NeoCompiler\\n");
+    printf("Welcome to NeoRun\\n");
     return 0;
 }`
 };

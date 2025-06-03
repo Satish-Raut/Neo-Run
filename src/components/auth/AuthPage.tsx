@@ -32,7 +32,7 @@ export default function AuthPage() {
 
       {/* Footer */}
       <footer className="py-4 text-center text-gray-500 text-sm">
-        <p>© {new Date().getFullYear()} NeoCompiler. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} NeoRun. All rights reserved.</p>
       </footer>
     </div>
   );

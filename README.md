@@ -1,4 +1,4 @@
-# NeoCompiler
+# NeoRun
 
 A modern, AI-powered online code compiler and editor that supports multiple programming languages and provides intelligent code assistance.
 
@@ -25,8 +25,8 @@ A modern, AI-powered online code compiler and editor that supports multiple prog
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/NeoCompiler.git
-cd NeoCompiler
+git clone https://github.com/yourusername/NeoRun.git
+cd NeoRun
 ```
 
 2. Install dependencies:

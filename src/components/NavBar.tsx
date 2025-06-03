@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Code2, LogIn, Terminal } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import ProfileMenu from './ProfileMenu';
 
 type NavBarProps = {
     showCompilerButton?: boolean;
@@ -26,11 +24,11 @@ export default function NavBar({
                 {/* Logo and Title */}
                 <div className="flex items-center gap-3">
                     <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-                        <div className="bg-gradient-to-r from-purple-600 to-violet-700 rounded-xl p-2 shadow-sm shadow-purple-500/15">
+                        <div className="bg-gradient-to-r from-purple-600 to-violet-700 rounded-xl p-2 shadow-sm shadow-purple-900/15">
                             <Code2 className="w-6 h-6 text-white" />
                         </div>
                         <h1 className="text-xl sm:text-2xl font-semibold tracking-tight bg-gradient-to-br from-purple-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
-                            NeoCompiler
+                            NeoRun
                         </h1>
                     </Link>
                 </div>
@@ -47,16 +45,13 @@ export default function NavBar({
                             {showCompilerButton && !isCompilerPage && (
                                 <Link
                                     to="/compiler"
-                                    className="flex items-center gap-2 p-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 rounded-xl text-white font-medium transition-all shadow-md shadow-purple-600/15 hover:shadow-purple-600/25 border border-purple-500/40"
+                                    className="flex items-center gap-2 p-2 bg-gradient-to-r from-purple-600 to-violet-700 hover:from-violet-700 hover:to-purple-600 rounded-xl text-white font-medium transition-all shadow-md shadow-purple-900/15 hover:shadow-purple-800/25 border border-purple-500/40"
                                     aria-label="Compiler"
                                 >
                                     <Terminal className="w-6 h-6" />
                                     <span className="hidden sm:inline">{isHomePage ? "Launch Compiler" : "Compiler"}</span>
                                 </Link>
                             )}
-
-                            {/* Profile Menu */}
-                            <ProfileMenu />
                         </>
                     ) : (
                         /* User is not logged in - show login button */
@@ -64,7 +59,7 @@ export default function NavBar({
                             {/* Login button */}
                             <Link
                                 to="/auth"
-                                className="flex items-center gap-2 p-2 bg-gray-800/60 hover:bg-gray-700/70 rounded-xl text-gray-100 transition-all border border-gray-700/30 shadow-sm hover:shadow"
+                                className="flex items-center gap-2 p-2 bg-gray-800/60 hover:bg-gray-800/70 rounded-xl text-white transition-all border border-purple-500/30 shadow-sm hover:shadow"
                                 aria-label="Login"
                             >
                                 <LogIn className="w-6 h-6" />
@@ -75,7 +70,7 @@ export default function NavBar({
                             {showCompilerButton && !isCompilerPage && (
                                 <Link
                                     to="/compiler"
-                                    className="flex items-center gap-2 p-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 rounded-xl text-white font-medium transition-all shadow-md shadow-purple-600/15 hover:shadow-purple-600/25 border border-purple-500/40"
+                                    className="flex items-center gap-2 p-2 bg-gradient-to-r from-purple-600 to-violet-700 hover:from-violet-700 hover:to-purple-600 rounded-xl text-white font-medium transition-all shadow-md shadow-purple-900/15 hover:shadow-purple-800/25 border border-purple-500/40"
                                     aria-label="Compiler"
                                 >
                                     <Terminal className="w-6 h-6" />

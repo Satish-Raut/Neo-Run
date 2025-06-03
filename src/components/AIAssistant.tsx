@@ -468,7 +468,7 @@ export default function AIAssistant({
         <div className="flex items-center justify-between px-4 py-3 border-b border-purple-800/30">
           <div className="flex items-center gap-2">
             <Bot className="text-purple-400 w-5 h-5" />
-            <h3 className="text-white font-medium">NeoCompiler AI Code Assistant</h3>
+            <h3 className="text-white font-medium">NeoRun AI Code Assistant</h3>
           </div>
           <div className="flex items-center gap-2">
             <button
@@ -572,7 +572,7 @@ export default function AIAssistant({
           {chatHistory.length === 0 && !error && !isLoading && mode === 'chat' && (
             <div className="text-center text-gray-400 py-8">
               <Bot className="w-12 h-12 mx-auto text-gray-600 mb-4" />
-              <h4 className="text-lg font-medium text-gray-300 mb-1">NeoCompiler AI Code Assistant</h4>
+              <h4 className="text-lg font-medium text-gray-300 mb-1">NeoRun AI Code Assistant</h4>
               <p className="max-w-md mx-auto">
                 Ask for code examples, help with debugging, or explanations of concepts related to your code.
               </p>
